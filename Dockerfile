@@ -16,9 +16,3 @@ EXPOSE 8000
 
 # App start karo
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
-
-# Image build karo
-docker build -t job-fraud-api .
-
-# Container run karo
-docker run -p 8000:8000 job-fraud-api
